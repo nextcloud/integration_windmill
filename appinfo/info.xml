@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>integration_windmill</id>
+	<name>Windmill integration</name>
+	<summary>Windmill integration</summary>
+	<description>under construction</description>
+	<version>1.0.0</version>
+	<licence>agpl</licence>
+	<author mail="jana.peper@nextcloud.com" homepage="">Jana Peper</author>
+	<namespace>Windmill</namespace>
+	<category>organization</category>
+	<category>tools</category>
+	<category>workflow</category>
+	<bugs>https://github.com/nextcloud/integration_windmill</bugs>
+	<dependencies>
+		<nextcloud min-version="30" max-version="33"/>
+	</dependencies>
+	<navigations>
+		<navigation>
+			<id>integration_windmill</id>
+			<name>Windmill integration</name>
+			<route>integration_windmill.page.index</route>
+			<icon>app.svg</icon>
+			<type>link</type>
+		</navigation>
+	</navigations>
+</info>
