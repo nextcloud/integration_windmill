@@ -16,7 +16,7 @@ class ApiController extends OCSController {
 		/**
 	 * List all events that can be registered as a webhook
 	 *
-	 * @return DataResponse<Http::STATUS_OK, array<string, mixed>, array{}>|DataResponse<Http::STATUS_NOT_FOUND, array{}, array{}>
+	 * @return DataResponse<Http::STATUS_OK, array<string, mixed>, array{}>
 	 *
 	 * 200: event list
 	 */
