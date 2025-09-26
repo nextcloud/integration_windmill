@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import NcAppContent from '@nextcloud/vue/dist/Components/NcAppContent.js'
+import NcAppContent from '@nextcloud/vue/components/NcAppContent'
 
 export default {
 	name: 'App',

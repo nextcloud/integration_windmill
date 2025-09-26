@@ -1,6 +1,20 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-Vue.mixin({ methods: { t, n } })
+import { translate, translatePlural } from '@nextcloud/l10n'
 
-const View = Vue.extend(App)
-new View().$mount('#integration_windmill')
+const app = createApp(App)
+	app.mixin({
+		methods: {
+			t: translate,
+			n: translatePlural,
+		},
+		computed: {
+			OCA() {
+				return window.OCA
+			},
+			OC() {
+				return window.OC
+			},
+		},
+	})
+	app.mount('#integration_windmill')
