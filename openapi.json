@@ -2,7 +2,7 @@
     "openapi": "3.0.3",
     "info": {
         "title": "integration_windmill",
-        "version": "1.0.0",
+        "version": "0.0.1",
         "description": "Windmill integration",
         "license": {
             "name": "agpl"
@@ -47,10 +47,10 @@
         }
     },
     "paths": {
-        "/ocs/v2.php/apps/integration_windmill/api": {
+        "/ocs/v2.php/apps/integration_windmill/api/v1/list/events": {
             "get": {
-                "operationId": "api-index",
-                "summary": "An example API endpoint",
+                "operationId": "api-list-events",
+                "summary": "List all events that can be registered as a webhook",
                 "tags": [
                     "api"
                 ],
@@ -76,7 +76,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "Data returned",
+                        "description": "event list",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -96,15 +96,7 @@
                                                     "$ref": "#/components/schemas/OCSMeta"
                                                 },
                                                 "data": {
-                                                    "type": "object",
-                                                    "required": [
-                                                        "message"
-                                                    ],
-                                                    "properties": {
-                                                        "message": {
-                                                            "type": "string"
-                                                        }
-                                                    }
+                                                    "type": "string"
                                                 }
                                             }
                                         }

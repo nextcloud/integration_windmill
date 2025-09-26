@@ -7,7 +7,7 @@
 	<description>under construction</description>
 	<version>1.0.0</version>
 	<licence>agpl</licence>
-	<author mail="jana.peper@nextcloud.com" homepage="">Jana Peper</author>
+	<author mail="jana.peper@nextcloud.com">Jana Peper</author>
 	<namespace>Windmill</namespace>
 	<category>organization</category>
 	<category>tools</category>
