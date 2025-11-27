@@ -14,15 +14,6 @@
 	<category>workflow</category>
 	<bugs>https://github.com/nextcloud/integration_windmill</bugs>
 	<dependencies>
-		<nextcloud min-version="30" max-version="33"/>
+		<nextcloud min-version="33" max-version="33"/>
 	</dependencies>
-	<navigations>
-		<navigation>
-			<id>integration_windmill</id>
-			<name>Windmill integration</name>
-			<route>integration_windmill.page.index</route>
-			<icon>app.svg</icon>
-			<type>link</type>
-		</navigation>
-	</navigations>
 </info>
