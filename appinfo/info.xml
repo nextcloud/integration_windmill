@@ -8,7 +8,25 @@
 	<id>integration_windmill</id>
 	<name>Windmill integration</name>
 	<summary>Windmill integration</summary>
-	<description>under construction</description>
+	<description><![CDATA[
+A seamless integration between Nextcloud and Windmill that allows you to automate workflows, sync data, and orchestrate processes with your standalone [Windmill](https://windmill.dev) instance.
+
+This project bridges Nextcloud’s collaboration and file platform with Windmill’s powerful automation engine — enabling low-code workflows, background jobs, and event-driven automation.
+
+## Features
+
+- Automated workflows triggered by Nextcloud events
+
+- Execution of various workflow actions directly in your Nexcloud  
+
+- Secure authentication via temporary tokens or app passwords
+
+- Configurable triggers and actions
+
+- Low-code workflow creation using Windmill UI
+
+More details on how to set this up in the [admin docs](https://docs.nextcloud.com/server/stable/admin_manual/windmill_workflows/index.html)
+]]>	</description>
 	<version>1.0.0</version>
 	<licence>agpl</licence>
 	<author mail="jana.peper@nextcloud.com">Jana Peper</author>
@@ -16,7 +34,9 @@
 	<category>organization</category>
 	<category>tools</category>
 	<category>workflow</category>
-	<bugs>https://github.com/nextcloud/integration_windmill</bugs>
+	<website>https://github.com/nextcloud/integration_windmill</website>
+	<bugs>https://github.com/nextcloud/integration_windmill/issues</bugs>
+	<screenshot>https://github.com/nextcloud/integration_windmill/raw/main/img/screenshots/screenshot1.png</screenshot>
 	<dependencies>
 		<nextcloud min-version="33" max-version="34"/>
 	</dependencies>
