@@ -14,6 +14,6 @@
 	<category>workflow</category>
 	<bugs>https://github.com/nextcloud/integration_windmill</bugs>
 	<dependencies>
-		<nextcloud min-version="33" max-version="33"/>
+		<nextcloud min-version="33" max-version="34"/>
 	</dependencies>
 </info>
