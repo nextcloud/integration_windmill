@@ -8,6 +8,8 @@ updates:
       time: "03:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
   - package-ecosystem: composer
     directory: "/vendor-bin/cs-fixer"
     schedule:
@@ -15,6 +17,8 @@ updates:
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
   - package-ecosystem: composer
     directory: "/vendor-bin/openapi-extractor"
@@ -23,6 +27,8 @@ updates:
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
   - package-ecosystem: composer
     directory: "/vendor-bin/phpunit"
@@ -32,19 +38,15 @@ updates:
       time: "03:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/vendor-bin/psalm"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
+
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: weekly
+      interval: weeklycooldown:
+      default-days: 7
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
