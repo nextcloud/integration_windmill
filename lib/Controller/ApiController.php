@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+/**
+ * SPDX-FileCopyrightText: 2026 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 
 namespace OCA\Windmill\Controller;
 
@@ -16,7 +20,7 @@ class ApiController extends OCSController {
 	/**
 	 * List all events that can be registered as a webhook
 	 *
-	 * @return DataResponse<Http::STATUS_OK, string, array{}>
+	 * @return DataResponse<Http::STATUS_OK, false|string, array{}>
 	 *
 	 * 200: event list
 	 */

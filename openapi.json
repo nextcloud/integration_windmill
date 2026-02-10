@@ -96,7 +96,17 @@
                                                     "$ref": "#/components/schemas/OCSMeta"
                                                 },
                                                 "data": {
-                                                    "type": "string"
+                                                    "oneOf": [
+                                                        {
+                                                            "type": "string"
+                                                        },
+                                                        {
+                                                            "type": "boolean",
+                                                            "enum": [
+                                                                false
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
                                             }
                                         }

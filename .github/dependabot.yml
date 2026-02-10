@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 version: 2
 updates:
   - package-ecosystem: composer
@@ -8,6 +11,8 @@ updates:
       time: "03:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
   - package-ecosystem: composer
     directory: "/vendor-bin/cs-fixer"
     schedule:
@@ -15,6 +20,8 @@ updates:
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
   - package-ecosystem: composer
     directory: "/vendor-bin/openapi-extractor"
@@ -23,17 +30,11 @@ updates:
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
+    cooldown:
+      default-days: 7
     open-pull-requests-limit: 10
   - package-ecosystem: composer
     directory: "/vendor-bin/phpunit"
-    schedule:
-      interval: weekly
-      day: saturday
-      time: "03:00"
-      timezone: Europe/Paris
-    open-pull-requests-limit: 10
-  - package-ecosystem: composer
-    directory: "/vendor-bin/psalm"
     schedule:
       interval: weekly
       day: saturday
@@ -48,3 +49,5 @@ updates:
       time: "03:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
+    cooldown:
+      default-days: 7
