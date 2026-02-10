@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 version: 2
 updates:
   - package-ecosystem: composer
@@ -38,12 +41,10 @@ updates:
       time: "03:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
-
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: weeklycooldown:
-      default-days: 7
+      interval: weekly
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
