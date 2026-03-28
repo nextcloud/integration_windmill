@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb63c42511d60fb6363e028c79a97798",
+    "content-hash": "8afffea62fc7347023a9ebdcf2d91762",
     "packages": [
         {
             "name": "bamarni/composer-bin-plugin",
@@ -116,20 +116,20 @@
         },
         {
             "name": "psalm/phar",
-            "version": "6.7.0",
+            "version": "6.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/phar.git",
-                "reference": "8eb3a469fa888c862b8a382f1fe1671b4e989f06"
+                "reference": "11c6b55449667837fc07bb2a456c45a137c05ecd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/phar/zipball/8eb3a469fa888c862b8a382f1fe1671b4e989f06",
-                "reference": "8eb3a469fa888c862b8a382f1fe1671b4e989f06",
+                "url": "https://api.github.com/repos/psalm/phar/zipball/11c6b55449667837fc07bb2a456c45a137c05ecd",
+                "reference": "11c6b55449667837fc07bb2a456c45a137c05ecd",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1 || ^8.0"
+                "php": "^8.2"
             },
             "conflict": {
                 "vimeo/psalm": "*"
@@ -145,9 +145,9 @@
             "description": "Composer-based Psalm Phar",
             "support": {
                 "issues": "https://github.com/psalm/phar/issues",
-                "source": "https://github.com/psalm/phar/tree/6.7.0"
+                "source": "https://github.com/psalm/phar/tree/6.16.1"
             },
-            "time": "2025-02-17T10:44:04+00:00"
+            "time": "2026-03-19T11:11:23+00:00"
         },
         {
             "name": "psr/clock",
