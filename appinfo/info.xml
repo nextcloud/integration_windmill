@@ -27,7 +27,7 @@ This project bridges Nextcloud’s collaboration and file platform with Windmill
 
 More details on how to set this up in the [admin docs](https://docs.nextcloud.com/server/stable/admin_manual/windmill_workflows/index.html)
 ]]>	</description>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<licence>agpl</licence>
 	<author mail="jana.peper@nextcloud.com">Jana Peper</author>
 	<namespace>Windmill</namespace>
@@ -36,7 +36,7 @@ More details on how to set this up in the [admin docs](https://docs.nextcloud.co
 	<category>workflow</category>
 	<website>https://github.com/nextcloud/integration_windmill</website>
 	<bugs>https://github.com/nextcloud/integration_windmill/issues</bugs>
-	<screenshot>https://github.com/nextcloud/integration_windmill/raw/main/img/screenshots/screenshot1.png</screenshot>
+	<screenshot>https://github.com/nextcloud/integration_windmill/raw/main/img/screenshot1.png</screenshot>
 	<dependencies>
 		<nextcloud min-version="33" max-version="34"/>
 	</dependencies>
