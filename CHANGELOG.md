@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 1.1.0 - 2026-05-08
+
+### Added
+- NC35 support
+
 ## 1.0.0 - 2026-02-26
 
 ### Added
