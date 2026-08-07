@@ -645,6 +645,205 @@ class ApiController extends OCSController {
 			];
 		}
 
+		if (class_exists('OCA\\Mail\\Events\\MessageSentEvent')) {
+			$events[] = [
+				'name' => 'MessageSentEvent',
+				'description' => 'A mail has been sent',
+				'path' => "OCA\Mail\Events\MessageSentEvent",
+				'parameters' => [
+					'user' => ['uid' => 'string', 'displayName' => 'string'],
+					'time' => 'int',
+					'event' => [
+						'class' => 'string',
+						'message' => [
+							'id' => 'int',
+							'cc' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'to' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'bcc' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'raw' => 'string',
+							'from' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'type' => 'int',
+							'failed' => 'bool',
+							'isHtml' => 'bool',
+							'sendAt' => 'int',
+							'status' => 'int',
+							'aliasId' => 'int',
+							'subject' => 'string',
+							'bodyHtml' => 'string',
+							'accountId' => 'int',
+							'bodyPlain' => 'string',
+							'isPgpMime' => 'bool',
+							'smimeSign' => 'bool',
+							'updatedAt' => 'int',
+							'editorBody' => 'string',
+							'requestMdn' => 'bool',
+							'attachments' => [
+								'type' => 'string',
+								'messageId' => 'int',
+								'fileName' => 'string',
+								'mimeType' => 'string',
+							],
+							'smimeEncrypt' => 'bool',
+							'inReplyToMessageId' => 'int',
+							'smimeCertificateId' => 'int',
+						],
+					],
+				],
+			];
+		}
+
+		if (class_exists('OCA\\Mail\\Events\\MessageDeletedEvent')) {
+			$events[] = [
+				'name' => 'MessageDeletedEvent',
+				'description' => 'A mail has been deleted',
+				'path' => "OCA\Mail\Events\MessageDeletedEvent",
+				'parameters' => [
+					'user' => ['uid' => 'string', 'displayName' => 'string'],
+					'time' => 'int',
+					'event' => [
+						'class' => 'string',
+						'accountId' => 'int',
+						'mailboxId' => 'int',
+						'messageId' => 'int',
+					],
+				],
+			];
+		}
+
+		if (class_exists('OCA\\Mail\\Events\\MessageFlaggedEvent')) {
+			$events[] = [
+				'name' => 'MessageFlaggedEvent',
+				'description' => 'A mail has been flagged',
+				'path' => "OCA\Mail\Events\MessageFlaggedEvent",
+				'parameters' => [
+					'user' => ['uid' => 'string', 'displayName' => 'string'],
+					'time' => 'int',
+					'event' => [
+						'class' => 'string',
+						'accountId' => 'int',
+						'mailboxId' => 'int',
+						'messageId' => 'int',
+						'flag' => 'string',
+						'set' => 'bool',
+					],
+				],
+			];
+		}
+
+		if (class_exists('OCA\\Mail\\Events\\NewMessageReceivedEvent')) {
+			$events[] = [
+				'name' => 'NewMessageReceivedEvent',
+				'description' => 'A new mail has been received',
+				'path' => "OCA\Mail\Events\NewMessageReceivedEvent",
+				'parameters' => [
+					'user' => ['uid' => 'string', 'displayName' => 'string'],
+					'time' => 'int',
+					'event' => [
+						'class' => 'string',
+						'messageUri' => 'string',
+						'message' => [
+							'uid' => 'int',
+							'cc' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'to' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'bcc' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'from' => [
+								'id' => 'int',
+								'type' => 'int',
+								'email' => 'string',
+								'label' => 'string',
+								'messageId' => 'int',
+								'localMessageId' => 'int',
+							],
+							'tags' => 'string[]',
+							'flags' => [
+								'seen' => 'bool',
+								'$junk' => 'bool',
+								'draft' => 'bool',
+								'deleted' => 'bool',
+								'flagged' => 'bool',
+								'$mdnsent' => 'bool',
+								'$notjunk' => 'bool',
+								'answered' => 'bool',
+								'forwarded' => 'bool',
+								'important' => 'bool',
+								'hasAttachments' => 'bool',
+							],
+							'avatar' => 'string',
+							'dateInt' => 'int',
+							'subject' => 'string',
+							'summary' => 'string',
+							'encrypted' => 'bool',
+							'inReplyTo' => 'string',
+							'mailboxId' => 'int',
+							'messageId' => 'string',
+							'databaseId' => 'int',
+							'mentionsMe' => 'bool',
+							'references' => 'string[]',
+							'attachments' => [
+								'type' => 'string',
+								'messageId' => 'int',
+								'fileName' => 'string',
+								'mimeType' => 'string',
+							],
+							'imipMessage' => 'bool',
+							'previewText' => 'string',
+							'threadRootId' => 'string',
+							'fetchAvatarFromClient' => 'bool',
+						]
+					],
+				],
+			];
+		}
+
 
 		return new DataResponse(json_encode($events), Http::STATUS_OK);
 	}
