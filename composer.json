@@ -33,9 +33,9 @@
 		"php": "^8.2 || ^8.3 || ^8.4 || ^8.5"
 	},
 	"require-dev": {
-		"nextcloud/ocp": "dev-master",
-		"roave/security-advisories": "dev-latest",
-		"psalm/phar": "6.16.1"
+		"nextcloud/ocp": "dev-stable33",
+		"psalm/phar": "6.16.1",
+		"roave/security-advisories": "dev-latest"
 	},
 	"config": {
 		"allow-plugins": {
