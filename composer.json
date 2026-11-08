@@ -34,8 +34,8 @@
 	},
 	"require-dev": {
 		"nextcloud/ocp": "dev-master",
-		"roave/security-advisories": "dev-latest",
-		"psalm/phar": "6.16.1"
+		"psalm/phar": "6.16.1",
+		"roave/security-advisories": "dev-latest"
 	},
 	"config": {
 		"allow-plugins": {
